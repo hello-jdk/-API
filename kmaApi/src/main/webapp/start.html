@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//브라우저에서 경도,위도 받기	
+        console.log(navigator.geo)
+        function getLocation() {
+            if (navigator.geolocation) { // GPS를 지원하면
+                navigator.geolocation.getCurrentPosition(function(position) {
+                	
+                	document.getElementById("lat").value=position.coords.latitude;
+                	document.getElementById("lon").value=position.coords.longitude;
+                	
+                }, function(error) {
+                    console.error(error);
+                }, {
+                    enableHighAccuracy : false, //정확도   
+                    maximumAge : 0,        
+                    timeout : Infinity
+                });
+            } else {
+                alert('GPS를 지원하지 않습니다');
+            }
+        }
+        getLocation();
+        
+    </script>
+    
+    <form action="result.jsp" method="post">
+    	<input type="hidden" id="lat" name="lat" value="">
+    	<input type="hidden" id="lon" name="lon" value="">
+    	<input type="submit" value="날씨확인">
+    </form>
+    
+</body>
+</html>
