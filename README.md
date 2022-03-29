@@ -11,5 +11,6 @@ https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgc
 사용법
 1. GpsTransfer.java 를 api 패키지 안에 생성
 2. start.html, result.jsp 을 webapp 하위에 생성
-3. start.html 시 브라우저에게 위치정보 받기
-4. result.jsp 콘솔창확인
+3. start.html 시작 
+브라우저에게 위치정보 받기
+5. result.jsp 콘솔창확인 or doucment확인
