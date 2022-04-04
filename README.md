@@ -14,3 +14,5 @@ https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgc
 3. start.html 시작 
 브라우저에게 위치정보 받기
 5. result.jsp 콘솔창확인 or doucment확인
+
+https://github.com/hello-jdk/gbStudy
